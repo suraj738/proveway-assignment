@@ -1,0 +1,184 @@
+
+* {
+    box-sizing: border-box;
+}
+
+
+h5 {
+    text-align: center;
+    color: #007F61;
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+
+.metro-font {
+    font-family: Metropolis;
+}
+
+.inter-font {
+
+    font-family: Inter;
+}
+
+.color-green {
+    color: #007F61;
+}
+
+.float-r {
+    float: right;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.fw-600 {
+    font-weight: 600;
+}
+
+.copyright-text {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 6px;
+}
+
+input {
+    margin-right: 15px;
+}
+
+select {
+    width: 65px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.title_line {
+    position: relative;
+    font-size: 17px;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+    color: #007F61;
+    font-family: Metropolis;
+    font-weight: 600;
+}
+
+.title_line:before,
+.title_line:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 48%;
+    height: 1px;
+    content: '\a0';
+    background-color: #cccccc;
+    margin-left: 2%;
+}
+
+.title_line:before {
+    margin-left: -50%;
+    text-align: right;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.second-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100%;
+    align-items: center;
+}
+
+.default-container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.active {
+    border: 1px solid #007F61;
+    background-color: #e2f7f2;
+}
+.redio-btn-container {
+    display: flex;
+
+}
+
+input[type='radio'] {
+    accent-color: #007F61;
+}
+
+.add-cart-btn {
+    font-size: 14px;
+    text-align: center;
+    padding: 10px 10px;
+    color: #fff;
+    background: #007F61;
+    width: 100%;
+    border: 1px solid #007F61;
+    border-radius: 4px;
+}
+
+.del-text {
+    color: #ccc;
+    margin-top: 20px;
+}
+
+.total-disc {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+}
+
+.size-colour-container {
+    padding-left: 25px;
+
+}
+
+.size-color-title {
+    width: 70px;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+
+.size-color-title-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.size-color-title-one {
+    width: 20px;
+}
+
+
+
+/* --------Media Queries---------  */
+
+
+/* Large devices (laptops/desktops, 992px and down) */
+@media only screen and (max-width: 992px) {
+
+    main {
+        width: 100%;
+    }
+
+}

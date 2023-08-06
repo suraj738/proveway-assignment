@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Company Product</title>
+    <link href="product.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500&family=Metrophobic&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div class=" metro-font title_line mb-10">Bundle & Save
+        </div>
+        <div class="metro-font container mb-10">
+            <div class="redio-btn-container">
+                <input type="radio" id="pair1" name="pair" value="195.00">
+                <label for="pair">1 Pair <br>
+                    <b>DKK 195.00</b></label>
+            </div>
+            <span class="fw-600">50% OFF
+            </span>
+        </div>
+        <div class="inter-font container default-container active mb-10">
+            <div class="second-container">
+                <div class="redio-btn-container">
+                    <input type="radio" id="pair1" name="pair" value="345.00" checked>
+                    <label for="pair">2 Pair <br>
+                        <b>DKK 345.00</b></label>
+                </div>
+                <span class="del-text"><del>DKK 195.00</del>
+                </span>
+                <div><span class="color-green"><b>Most Populer</b></span><br><span class="float-r"><b>40% OFF</b>
+                    </span></div>
+
+            </div>
+            <div class="size-colour-container">
+                <div class="size-color-title-container">
+                    <div class="size-color-title-one"></div>
+                    <div class="size-color-title">Size</div>
+                    <div class="size-color-title">Color</div>
+                </div>
+                <div>
+                    <span>#1</span>
+                    <select name="size" id="size">
+                        <option value="1">S</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <select name="color" id="color">
+                        <option value="Color">Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+                <div>
+                    <span>#2</span>
+                    <select name="size" id="size">
+                        <option value="1">S</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <select name="color" id="color">
+                        <option value="Color">Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+            </div>
+
+        </div>
+        </div>
+        <div class="metro-font container mb-10">
+            <div class="redio-btn-container">
+                <input type="radio" id="pair1" name="pair" value="528.00">
+                <label for="pair">3 Pair <br>
+                    <b>DKK 528.00</b></label>
+            </div>
+            <span><b>60% OFF</b>
+            </span>
+        </div>
+        <div class="total-disc"><span class="inter-font color-green">Free 2 Day Shipping</span><span
+                class="inter-font">Total : DKK <span class="inter-font" id="total">345.00</span></span></div>
+        <div>
+            <button class="inter-font add-cart-btn">+ Add to Cart</button>
+        </div>
+        <div class="copyright-text"><span class="inter-font">&copy Powered by Pumper</span></div>
+
+    </main>
+    <script>
+        var radio = document.querySelectorAll("input[type=radio]");
+        for (let i = 0; i < radio.length; i++) {
+            radio[i].addEventListener("click", function (e) {
+                document.getElementById("total").innerHTML = e.target.value;
+                removeActive();
+                e.target.parentElement.parentElement.classList.contains('second-container') ? e.target
+                    .parentElement.parentElement.parentElement.classList.add("active") : e.target.parentElement
+                    .parentElement.classList.add("active")
+            })
+        }
+
+        function removeActive() {
+            containers = document.getElementsByClassName("container");
+            for (let i = 0; i < containers.length; i++) {
+                containers[i].classList.remove("active");
+            }
+        }
+    </script>
+</body>
+
+</html>

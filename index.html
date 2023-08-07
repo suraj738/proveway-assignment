@@ -20,29 +20,21 @@
     <main>
         <div class=" metro-font title_line mb-10">Bundle & Save
         </div>
-        <div class="metro-font container mb-10">
-            <div class="redio-btn-container">
-                <input type="radio" id="pair1" name="pair" value="195.00">
-                <label for="pair">1 Pair <br>
-                    <b>DKK 195.00</b></label>
-            </div>
-            <span class="fw-600">50% OFF
-            </span>
-        </div>
-        <div class="inter-font container default-container active mb-10">
+
+        <label class="inter-font container default-container mb-10" for="pair1">
             <div class="second-container">
                 <div class="redio-btn-container">
-                    <input type="radio" id="pair1" name="pair" value="345.00" checked>
-                    <label for="pair">2 Pair <br>
-                        <b>DKK 345.00</b></label>
+                    <input type="radio" id="pair1" name="pair" value="195.00" checked>
+                    <label class="product-price-font inter-font">1 Pair <br>
+                        <b>DKK 195.00</b></label>
                 </div>
-                <span class="del-text"><del>DKK 195.00</del>
-                </span>
-                <div><span class="color-green"><b>Most Populer</b></span><br><span class="float-r"><b>40% OFF</b>
-                    </span></div>
-
+                
+                <div>
+                       <span class="product-discount float-r"><b>50% OFF</b>
+                    </span>
+                </div>
             </div>
-            <div class="size-colour-container">
+            <div class="size-colour-container hidden">
                 <div class="size-color-title-container">
                     <div class="size-color-title-one"></div>
                     <div class="size-color-title">Size</div>
@@ -76,23 +68,113 @@
                 </div>
             </div>
 
-        </div>
-        </div>
-        <div class="metro-font container mb-10">
-            <div class="redio-btn-container">
-                <input type="radio" id="pair1" name="pair" value="528.00">
-                <label for="pair">3 Pair <br>
-                    <b>DKK 528.00</b></label>
+        </label>
+        <label class="inter-font container default-container active mb-10" for="pair2">
+            <div class="second-container">
+                <div class="redio-btn-container">
+                    <input type="radio" id="pair2" name="pair" value="345.00" checked>
+                    <label class="product-price-font inter-font">2 Pair <br>
+                        <b>DKK 345.00</b></label>
+                </div>
+                <span class="del-text product-price-font"><del>DKK 195.00</del>
+                </span>
+                <div>
+                    <span class="product-discount color-green"><b>Most Populer</b></span><br><span
+                        class="product-discount float-r"><b>40% OFF</b>
+                    </span>
+                </div>
             </div>
-            <span><b>60% OFF</b>
-            </span>
-        </div>
-        <div class="total-disc"><span class="inter-font color-green">Free 2 Day Shipping</span><span
-                class="inter-font">Total : DKK <span class="inter-font" id="total">345.00</span></span></div>
+            <div class="size-colour-container hidden">
+                <div class="size-color-title-container">
+                    <div class="size-color-title-one"></div>
+                    <div class="size-color-title">Size</div>
+                    <div class="size-color-title">Color</div>
+                </div>
+                <div>
+                    <span>#1</span>
+                    <select name="size" id="size">
+                        <option value="1">S</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <select name="color" id="color">
+                        <option value="Color">Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+                <div>
+                    <span>#2</span>
+                    <select name="size" id="size">
+                        <option value="1">S</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <select name="color" id="color">
+                        <option value="Color">Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+            </div>
+
+        </label>
+        <label class="inter-font container default-container mb-10" for="pair3">
+            <div class="second-container">
+                <div class="redio-btn-container">
+                    <input type="radio" id="pair3" name="pair" value="528.00" checked>
+                    <label class="product-price-font inter-font">3 Pair <br>
+                        <b>DKK 528.00</b></label>
+                </div>
+                <div>
+                       <span class="product-discount float-r"><b>60% OFF</b>
+                    </span>
+                </div>
+            </div>
+            <div class="size-colour-container hidden">
+                <div class="size-color-title-container">
+                    <div class="size-color-title-one"></div>
+                    <div class="size-color-title">Size</div>
+                    <div class="size-color-title">Color</div>
+                </div>
+                <div>
+                    <span>#1</span>
+                    <select name="size" id="size">
+                        <option value="1">S</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <select name="color" id="color">
+                        <option value="Color">Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+                <div>
+                    <span>#2</span>
+                    <select name="size" id="size">
+                        <option value="1">S</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                    </select>
+                    <select name="color" id="color">
+                        <option value="Color">Color</option>
+                        <option value="Red">Red</option>
+                        <option value="Green">Green</option>
+                    </select>
+                </div>
+            </div>
+
+        </label>
+        
+
+        <div class="total-disc"><span class="inter-font color-green product-price-font">Free 2 Day Shipping</span><span
+                class="inter-font product-price-font">Total : DKK <span class="inter-font product-price-font"
+                    id="total">345.00</span></span></div>
         <div>
             <button class="inter-font add-cart-btn">+ Add to Cart</button>
         </div>
-        <div class="copyright-text"><span class="inter-font">&copy Powered by Pumper</span></div>
+        <div class="copyright-text"><span class="inter-font"><i>&copy Powered by Pumper</i></span></div>
 
     </main>
     <script>
@@ -102,9 +184,8 @@
             radio[i].addEventListener("click", function (e) {
                 document.getElementById("total").innerHTML = e.target.value;
                 removeActive();
-                e.target.parentElement.parentElement.classList.contains('second-container') ? e.target
-                    .parentElement.parentElement.parentElement.classList.add("active") : e.target.parentElement
-                    .parentElement.classList.add("active")
+                 e.target.parentElement
+                 .parentElement.parentElement.classList.add("active")
             })
         }
 

@@ -1,4 +1,3 @@
-
 * {
     box-sizing: border-box;
 }
@@ -34,17 +33,15 @@ h5 {
     margin-bottom: 10px;
 }
 
-.fw-600 {
-    font-weight: 600;
-}
-
 .copyright-text {
     display: flex;
     justify-content: flex-end;
-    margin-top: 6px;
+    margin-top: 4px;
+    font-size: 12px;
 }
 
 input {
+    font-size: 10px;
     margin-right: 15px;
 }
 
@@ -52,6 +49,7 @@ select {
     width: 65px;
     padding: 2px;
     margin-bottom: 5px;
+    font-size: 10px;
 }
 
 .title_line {
@@ -117,6 +115,7 @@ main {
     border: 1px solid #007F61;
     background-color: #e2f7f2;
 }
+
 .redio-btn-container {
     display: flex;
 
@@ -127,7 +126,6 @@ input[type='radio'] {
 }
 
 .add-cart-btn {
-    font-size: 14px;
     text-align: center;
     padding: 10px 10px;
     color: #fff;
@@ -135,6 +133,8 @@ input[type='radio'] {
     width: 100%;
     border: 1px solid #007F61;
     border-radius: 4px;
+    font-family: Inter;
+    font-size: 16px;
 }
 
 .del-text {
@@ -151,6 +151,7 @@ input[type='radio'] {
 
 .size-colour-container {
     padding-left: 25px;
+    font-size: 9px;
 
 }
 
@@ -158,6 +159,7 @@ input[type='radio'] {
     width: 70px;
     padding: 2px;
     margin-bottom: 5px;
+    font-size: 10px;
 }
 
 .size-color-title-container {
@@ -168,8 +170,20 @@ input[type='radio'] {
 .size-color-title-one {
     width: 20px;
 }
+.product-price-font{
+    font-size: 14px;
+}
+.product-discount{
+    font-size: 12px;
+}
 
+.hidden {
+    display: none;
+}
 
+.active .hidden {
+    display: block;
+}
 
 /* --------Media Queries---------  */
 
